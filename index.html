@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -112,7 +112,7 @@
 
     <div class="post-container">
         <!-- <img class="post-image" src="https://d2lhpso9w1g8dk.cloudfront.net/web/risorse/maglietta_2025/s_13188792_0614246.png" alt="Sfondo post"> -->
-        <img class="post-image" src="https://i.imgur.com/NY6vtZK.jpeg" alt="Sfondo post">
+       <!-- <img class="post-image" src="https://i.imgur.com/NY6vtZK.jpeg" alt="Sfondo post">
        <img class="brand-logo" src="https://nintendon.it/wp-content/uploads/2020/04/Gabibbo-NintendOn.jpg" alt="Logo">
 
         <div class="overlay">
@@ -123,6 +123,189 @@
             <div class="source-tag">FONTE: <strong>EEEEEEL PRIMOOO</strong></div>
         </div>
     </div>
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore Post Instagram</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #1e1e1e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            padding: 20px;
+        }
+
+        /* Bottone per scaricare la foto */
+        .download-btn {
+            background-color: #00ff66;
+            color: #111;
+            border: none;
+            padding: 12px 24px;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 255, 102, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* CONTENITORE PRINCIPALE: Dimensioni reali Instagram 4:5 (1080x1350 px) */
+        .post-container {
+            position: relative;
+            width: 1080px;
+            height: 1350px;
+            overflow: hidden;
+            /* Usiamo zoom o scale per vederlo intero sul browser senza che esca dallo schermo */
+            transform: scale(0.5); 
+            transform-origin: top center;
+            margin-bottom: -675px; /* Compensa lo spazio vuoto lasciato dallo scale */
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        /* Immagine di sfondo dello screen */
+        .post-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Sfumatura nera dal basso */
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 65%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.98) 15%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 70px; /* Spazio aumentato per la risoluzione più grande */
+        }
+
+        /* Logo in alto a destra modificato con l'immagine richiesta */
+        .brand-logo {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            width: 110px;
+            height: 110px;
+            border: 5px solid #00ff66;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #fff;
+        }
+
+        /* Blocco testo principale */
+        .text-block {
+            font-family: 'Antonio', sans-serif;
+            text-transform: uppercase;
+            line-height: 0.88;
+            letter-spacing: -2px;
+            margin-bottom: 45px;
+        }
+
+        /* Testo Giallo */
+        .text-highlight {
+            color: #F1D441;
+            font-size: 95px; /* Scalato per i 1080px di larghezza */
+            display: block;
+        }
+
+        /* Testo Bianco grande */
+        .text-main {
+            color: #FFFFFF;
+            font-size: 160px; /* Scalato per i 1080px di larghezza */
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Fonte della notizia in basso a destra */
+        .source-tag {
+            align-self: flex-end;
+            font-size: 28px;
+            color: #e0e0e0;
+            font-style: italic;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .source-tag strong {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="download-btn" onclick="scaricaPost()">Scarica Foto per Instagram</button>
+
+    <div id="post-da-salvare" class="post-container">
+        
+        <img class="post-image" src="https://nintendon.it/wp-content/uploads/2020/04/Gabibbo-NintendOn.jpg" alt="Sfondo post">
+        
+        <img class="brand-logo" src="" alt="Logo">
+
+        <div class="overlay">
+            <div class="text-block">
+                <span class="text-highlight">È fatta: Gennaro Gattuso sarà il nuovo allenatore</span>
+                <span class="text-main">della lazio.</span>
+            </div>
+            <div class="source-tag">FONTE: <strong>Matteo Moretto</strong></div>
+        </div>
+    </div>
+
+    <script>
+        function scaricaPost() {
+            const elemento = document.getElementById('post-da-salvare');
+            
+            // Opzioni per generare l'immagine alla massima qualità
+            const opzioni = {
+                scale: 2, // Raddoppia la qualità per evitare sgranature su IG
+                useCORS: true, // Permette di caricare immagini da link esterni
+                allowTaint: true
+            };
+
+            html2canvas(elemento, opzioni).then(canvas => {
+                // Crea un link invisibile per far partire il download
+                const link = document.createElement('a');
+                link.download = 'post-cronache.png';
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            }).catch(error => {
+                alert("Errore durante il salvataggio. Se usi immagini da internet, assicurati che il sito permetta il download diretto, altrimenti usa foto locali sul tuo PC.");
+                console.error(error);
+            });
+        }
+    </script>
 
 </body>
 </html>
