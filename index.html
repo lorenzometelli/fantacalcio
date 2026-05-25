@@ -58,22 +58,16 @@
 
         /* Logo in alto a destra (Simulato) */
         .brand-logo {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            width: 35px;
-            height: 35px;
-            background-color: #111;
-            border: 2px solid #00ff66; /* Il classico verde di Cronache */
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            font-weight: bold;
-            font-size: 14px;
-            font-family: 'Antonio', sans-serif;
-        }
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px; /* Leggermente più grande per rendere visibile l'immagine */
+    height: 40px;
+    border: 2px solid #00ff66; /* Mantiene il cerchio verde tipico di Cronache */
+    border-radius: 50%;
+    object-fit: cover; /* Evita che la foto si schiacci o si storca */
+    background-color: #fff; /* Sfondo bianco per far risaltare il logo */
+}
 
         /* Blocco testo principale */
         .text-block {
@@ -87,14 +81,14 @@
         /* Testo in Giallo */
         .text-highlight {
             color: #F1D441; /* Giallo iconico */
-            font-size: 38px;
+            font-size: 30px;
             display: block;
         }
 
         /* Testo in Bianco grande */
         .text-main {
             color: #FFFFFF;
-            font-size: 62px;
+            font-size: 50px;
             display: block;
             margin-top: 2px;
         }
@@ -119,11 +113,11 @@
     <div class="post-container">
         <!-- <img class="post-image" src="https://d2lhpso9w1g8dk.cloudfront.net/web/risorse/maglietta_2025/s_13188792_0614246.png" alt="Sfondo post"> -->
         <img class="post-image" src="https://i.imgur.com/NY6vtZK.jpeg" alt="Sfondo post">
-        <div class="brand-logo">G</div>
+       <img class="brand-logo" src="https://www.dandi.media/wp-content/uploads/2016/09/mascotte-big-red-gabibbo.jpg" alt="Logo">
 
         <div class="overlay">
             <div class="text-block">
-                <span class="text-highlight">È fatta: Dieghy confermato come nuovo allenatore</span>
+                <span class="text-highlight">È fatta: Dieghy confermato come allenatore</span>
                 <span class="text-main">della DinoDiegaxy.</span>
             </div>
             <div class="source-tag">FONTE: <strong>EEEEEEL PRIMOOO</strong></div>
