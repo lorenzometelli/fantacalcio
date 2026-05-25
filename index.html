@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GABIBBO ROMANO</title>
+  <style>
+    body {
+      background-color: pink;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    img.gabibbo {
+      margin-top: 20px;
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    p.description {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .notizie {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .notizia {
+      background-color: #fff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .notizia h2 {
+      margin-top: 0;
+    }
+    .extra-content {
+      display: none;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #ccc;
+    }
+    .extra-content img {
+      width: 200px;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+    /* immagini angoli */
+    .corner-img {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      z-index: 1000;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    .top-right {
+      top: 10px;
+      right: 10px;
+    }
+    .top-left {
+      top: 10px;
+      left: 10px;
+    }
+    .bottom-left {
+      bottom: 10px;
+      left: 10px;
+    }
+    .bottom-right {
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- immagini angoli -->
+  <img src="https://cdn.7tv.app/emote/01FWZPG2780008F59F7E75MRE8/4x.avif" alt="top left" class="corner-img top-left" />
+  <img src="https://cdn.7tv.app/emote/01J1SDYWR800068734GKCYFK2H/4x.avif" alt="top right" class="corner-img top-right" />
+  <img src="https://cdn.7tv.app/emote/01FY1T5T3G000FG2VJF724AD35/4x.avif" alt="bottom left" class="corner-img bottom-left" />
+  <img src="https://cdn.7tv.app/emote/01FGKVBA2800064MEQW00DNKF0/4x.avif" alt="bottom right" class="corner-img bottom-right" />
+
+  <header>
+    <h1>GABIBBO ROMANO</h1>
+    <img class="gabibbo" src="https://www.orrorea33giri.com/wp-content/uploads/2008/11/maxresdefault-1-e1500463318133.jpg" alt="Gabibbo" />
+    <p class="description">Le migliori notizie del mondo del calcio mercato solo qui.</p>
+  </header>
+  <section class="notizie">
+
+    <div class="notizia" onclick="toggleExtraContentTah()">
+      <h2>Vlahovic al Milan è un'idea concreta</h2>
+      <p>Vlahovic al Milan è una pista da seguire con attenzione. 
+        Il nodo principale è relativo all'ingaggio del classe 2000 da 12 milioni di euro netti a stagione. 
+        Una soluzione che il Milan sta valutando internamente è quella di proporre un contratto di cinque anni a 7 milioni più ricchi bonus a stagione.
+        Nelle scorse ore è emersa la candidatura di Mateo Retegui,
+        bomber dell'Atalanta e vecchia conoscenza di Moncada che poteva prenderlo dal Tigre 2 anni fa per 15 milioni,
+        ma in questo momento sembra venire subito dopo quella di Vlahovic.</p>
+      <div class="extra-content" id="extra-content-tah">
+        Rara foto di Dusan Vlahovic appena metterà la maglia del Milan
+        <br />
+        <img src="https://upload.wikimedia.org/wikipedia/it/thumb/e/e5/Marco_van_Basten_-_Milan_AC_1990-91.jpg/960px-Marco_van_Basten_-_Milan_AC_1990-91.jpg" alt="Tah meme" />
+      </div>
+    </div>
+
+    <div class="notizia" onclick="toggleExtraContentAnguissa()">
+      <h2>Bologna, pozzo di talento!</h2>
+      <p>I calciatori del Bologna sono molto richiesti sul mercato. A partire dalla coppia di difensori centrali. 
+        Il colombiano John Lucumì piace alla Roma, mentre l'olandese Sam Beukema interessa al Napoli, interesse che pare reciproco. 
+        Che (in alternativa all'olandese Noa Lang del PSV Eindhoven e al franco-marocchino Eliesse Ben Seghir del Monaco) 
+        è tornato sull'esterno offensivo svizzero Dan Ndoye, valutato 40 milioni di euro dal club.
+        A sua volta il Bologna si è messo sulle tracce dell'attaccante del Napoli, Giacomo Raspadori, cercato pure dalla Roma
+      </p>
+      <div class="extra-content" id="extra-content-anguissa">
+        Bologna pronto a fare 3000 miliardi di euro con i suoi giocatori
+        <br />
+        <img src="https://www.rollingstone.it/wp-content/uploads/2016/08/Bart-Simpsons-Drake-500x319.jpg" alt="De Laurentiis meme" style="width: 150px" />
+      </div>
+    </div>
+
+    <div class="notizia" onclick="toggleExtraContentAllegri()">
+      <h2>PANICO ITALIA!</h2>
+      <p>Spalletti non è più l'allenatore della nazionale Italiana, addio dopo la partita contro la Moldavia.
+         I possibili sostituti sarebbero: Stefano Pioli che sta facendo aspettare la Fiorentina proprio per vedere lo sviluppo della faccenda Italia,
+         altri nomi sarebbero Claudio Ranieri e Daniele De Rossi.</p>
+      <div class="extra-content" id="extra-content-allegri">
+       Chivu che si vede strappato il contratto appena Spalletti viene esonerato dall'italia
+        <br />
+        <img src="https://cdn.7tv.app/emote/01GCXHCZ58000D8RDSXFWM2K9B/4x.avif" alt="Allegri meme" />
+      </div>
+    </div>
+
+    <div class="notizia" onclick="toggleExtraContentItaliano()">
+      <h2>Osimhen NO ARABIA</h2>
+      <div class="extra-content" id="extra-content-italiano">
+      <p> L'attaccante nigeriano del Napoli ha rifutato l'offerta dell'Al-Hilal, che gli ha proposto un ingaggio da circa 30 milioni di euro netti all'anno più bonus. 
+          L'Al Hilal è anche disposto a pagare la clausola rescissoria di 75 mln, ma non c'è il benestare il giocatore.
+         Per Osimhen c'era stato anche un interessamento da parte della Juventus prima del licenziamento del direttore Cristiano Giuntoli. 
+         Ci riprovano anche i turchi del Galatasaray, dove l'attaccante nigeriano ha già giocato in prestito questa stagione, segnando 37 goal in 41 presenze. </p>
+        <br />
+      </div>
+    </div>
+
+    <div class="notizia" onclick="toggleExtraContentGasperini()">
+      <h2>Brescia calcio, si va verso il fallimento della società</h2>
+      <p>Massimo Cellino ha deciso di staccare la spina. Il Brescia finisce così, oggi, dopo 114 anni. 
+        Salvo dietrofront al momento improbabili il suo presidente non pagherà gli stipendi, non rispetterà la scadenza odierna del pagamento 
+        degli emolumenti ai dipendenti e dei relativi contributi necessaria per l’iscrizione al prossimo campionato. 
+        Una somma di 3 milioni di euro, in virtù della proposta di rateizzazione della Agenzia delle Entrate, 
+        per un debito complessivo di 9 milioni: niente di insormontabile per un imprenditore esperto e facoltoso come Cellino, 
+        che però non aspetta più compratori (il gruppo americano non ha voluto anticipare la cifra corrispondente alle incombenze che pendono 
+        sul suo capo) e non ha voglia di ripartire da una città con cui la frattura è totale da tempo. 
+        Sul tavolo anche la possibilità di fusione con una delle 3 squadre in serie c della provincia, FeralpiSalò, Ospitaletto e Lumezzane.
+       In questo caso si ripartirebbe con un nome diverso da Brescia Calcio dalla serie c, senza tenere tutta la storia della società </p>
+      <div class="extra-content" id="extra-content-gasperini">
+        Cellino speriamo di vedere al più presto la doppia data su wikipedia, magari i tifosi trovano dove abiti e ti fanno saltare in aria 
+        <br />
+        <img src="https://www.elivebrescia.tv/wp-content/uploads/2023/06/brescia-calcio-reggina-tribunale-1911-striscione-cellino.png" alt="Gasperini meme" />
+      </div>
+    </div>
+
+    <div class="notizia" onclick="toggleExtraContentReijnders()">
+      <h2>Chelsea offerta al Milan per Maignan</h2>
+       <p>Alla squadra londinese piace molto il portiere francese, prima offerta da 15 mln, il Milan lo valuta 25 mln. 
+         Destinazione gradita da Magic Mike alla quale scade il contratto nel 2026 e che non intende rinnovare con i rossoneri, 
+         proprio per questo il Milan potrebbe lasciarlo comunque andare per non perderlo a 0.
+         Per sostiuire il portiere francese il nome più caldo è quello di Vanja Milinkovic Savic, già bloccato dal Milan, grazie ai buoni rapporti tra l'agente e Igli Tare. 
+         IL portiere serbo ha una clausola da 20 mln che renderebbe molto più semplice la trattativa </p>
+      <div class="extra-content" id="extra-content-reijnders">
+         I giocatori del Milan appena hanno letto l'acquisto di Allegri
+        <br />
+        <img src="https://cdn.7tv.app/emote/01GP2BY1XG0009TPRPGFYX0Q91/4x.gif" alt="Reijnders meme" />
+      </div>
+    </div>
+
+    <div class="notizia" onclick="toggleExtraContentConte()">
+      <h2>Theo Hernandez e l'offerta dall'Arabia</h2>
+      <p>Ufficiale la proposta da parte dell'Al Hilal per Theo Hernandez da 35 mln e ingaggio da circa 18 mln l'anno per 3 anni, l'offerta è già stata accettata dal Milan circa una settimana fa, ma non ancora da Theo.
+      Nel frattempo la società Araba si sta spazientendo e sta già vagliando altri terzini</p>
+      <div class="extra-content" id="extra-content-conte">
+          Ah Boh beccati Mr Krabs Edit
+        <br />
+        <img src="https://cdn.7tv.app/emote/01GSQSEH7G0000ZMA1SVXGGJ5Z/4x.gif" alt="Conte meme" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="notizia" onclick="toggleExtraContentMilan()">
+      <h2>Inter alla ricerca di un attaccante</h2>
+      <p>L'inter è alla ricerca di un attaccante capace di far rifiatare Thuram e Lautaro Martinez.
+        I nomi principali sono 2: Bonny, 21 anni, già allenato da Chivu al Parma, la richiesta del Parma è di 25 mln, 
+        unico problema sarebbe l'infortunio, che sta ancora tenendo fuori l'attaccante francese, 
+        l'Inter lo vorrebbe subito operativo per il mondiale per club.
+        L'altro nome sarebbe quello di Hojlund, attaccante in forza allo United, richeisti 45 milioni dagli inglesi, l'Inter lo valuta sui 30 mln.
+    </p>
+      <div class="extra-content" id="extra-content-milan">
+        Taremi pronto a fare un mondiale per club da 20 gol e dare l'illusione di essere un calciatore vero e non fare comprare nessun attaccante all'Inter
+        <br />
+        <img src="https://img.uefa.com/imgml/TP/players/1/2025/324x324/250097909.jpg" alt="Milan meme" />
+      </div>
+    </div>
+    
+
+  </section>
+  <script>
+    function toggleExtraContentTah() {
+      var content = document.getElementById('extra-content-tah');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleExtraContentAnguissa() {
+      var content = document.getElementById('extra-content-anguissa');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleExtraContentAllegri() {
+      var content = document.getElementById('extra-content-allegri');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleExtraContentItaliano() {
+      var content = document.getElementById('extra-content-italiano');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleExtraContentGasperini() {
+      var content = document.getElementById('extra-content-gasperini');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleExtraContentReijnders() {
+      var content = document.getElementById('extra-content-reijnders');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleExtraContentConte() {
+      var content = document.getElementById('extra-content-conte');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+     function toggleExtraContentMilan() {
+      var content = document.getElementById('extra-content-milan');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
